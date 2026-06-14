@@ -1,0 +1,117 @@
+body{
+    
+    margin: 0;
+    padding: 20px;
+    background:linear-gradient(to bottom, rgb(100, 100, 177), rgb(155, 204, 189))
+}
+
+.menu{
+    background: #035c2b;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.menu button{
+    background: #ffffff;
+    color: #00695c;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.menu button:hover{
+    background: #1feea9;
+    color: #000;
+    transform: scale(1.05);
+}
+
+img{
+   width: 300px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s, filter 0.5s;
+}
+img:hover{
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+div1{
+ 
+    background:linear-gradient(to top, rgb(25, 228, 235), rgb(238, 255, 90));
+    width: 300px;
+    height: fit-content;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.4s, box-shadow 0.4s;
+    
+}
+div1:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+selection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    column-gap: 25px;
+    row-gap: 50px;
+    padding: 20px;
+}
+p{
+    
+    margin: 10px;
+    padding: 5px;
+    text-align: justify;
+    font-family: cursive;
+}
+h1{
+  font-family: fantasy;
+    font-size: 50px;
+    color: rgb(196, 117, 192);
+    text-shadow: 5px 6px 8px white;  
+    text-align: center; 
+    -webkit-text-stroke: 1px rgb(90, 23, 76);
+}
+h2{
+    font-family: monospace;
+    font-size: 30px;
+    color: rgb(39, 8, 8);
+    text-shadow: 5px 6px 8px white;
+}
+h3{
+     font-family: monospace;
+    font-size: 30px;
+    color: rgb(39, 8, 8);
+    text-shadow: 5px 6px 8px white;
+}
+h4{
+     font-family: monospace;
+    font-size: 30px;
+    color: rgb(39, 8, 8);
+    text-shadow: 5px 6px 8px white;
+}
+@media (max-width: 900px){
+    selection{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    selection{
+        grid-template-columns: 1fr;
+    }
+}
+
